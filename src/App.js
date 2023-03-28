@@ -5,7 +5,7 @@ import City from './City'
 
 function App() {
 
-  const key = 'd3eec13c37f74833bb024119232703'
+  const key = process.env.REACT_APP_API_KEY;
   const [search, setSearch] = useState("")
   const [city, setCity] = useState()
  
