@@ -12,8 +12,8 @@ function App() {
   useEffect(()=>{
     async function getUser() {
       try {
-        const response = await axios.get(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${search}`);
-        const response2 = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=Bursa`);
+        const response = await axios.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${search}`);
+        const response2 = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=Bursa`);
 
         console.log(response2)
         setCity(response)
